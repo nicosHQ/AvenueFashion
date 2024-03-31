@@ -1,0 +1,171 @@
+$info: #00c8c8;
+$color2: #333333;
+$color3: #f8f8f8;
+$color4: #575153;
+@import "bootstrap-5.2.2/scss/bootstrap.scss";
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+@import "bootstrap-5.2.2/scss/bootstrap.scss";
+
+
+
+.bg-color1{
+    background-color: $info;
+}
+.bg-color3{
+    background-color: $color3;
+}
+.text-color1{
+    color: $info;
+}
+.fs-13{
+    font-size: 13px;
+}
+.fs-15{
+    font-size: 15px;
+}
+.fs-17{
+    font-size: 17px;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+.logo{
+    text-transform: uppercase;
+}
+.link-info{
+    &:hover{
+        color: $info;
+    }
+    &:active{
+        color: $info;
+    }
+}
+.home-banner{
+    height: 600px;
+    width: 100%;
+    margin: auto;
+    background-image: url("img/photo.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    .banner-box{
+        width: 350px;
+        position: absolute;
+        right: 200px;
+        bottom: 100px;
+    }
+}
+.home-card{
+    cursor: pointer;
+    span{
+        width: 80%; margin: auto;
+    }
+    .home-card-text{
+       display: none;
+    }
+    &:hover .home-card-text{
+        display: block;
+    }
+}
+.lookbook-text{
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    width: 40%;
+    p{
+        font-size: 15px;
+    }
+}
+.footer-box{
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buttonico{
+    color: #000000;
+    background-color: white;
+    border: 3px solid #000000;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-top: 20px;
+}
+.buttonico:hover{
+    background-color: $info;
+    border: 3px solid #f8f8f8;
+    color: white;
+}
+.buttonico2{
+    color: #000000;
+    background-color: white;
+    border: 3px solid #000000;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-top: 20px;
+}
+.buttonico2:hover{
+    background-color: black;
+    border: 3px solid #f8f8f8;
+    color: white;
+}
+.h1-nico{
+    color: $color4;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+.h2-nico{
+    color: $color4;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+.p-nico{
+    color: $color4;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+.h1-nico2{
+    font-size: 18px;
+    color: $color4;
+    font-family: 'Montserrat', sans-serif;
+}
+.price{
+    font-size: 25px;
+    color: $color4;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 70%;
+}
+.p-nico2{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: $color2;
+}
+.ul-nico{
+    list-style: circle;
+}
+.navmini{
+    background-color: #dfdfdf;
+    width: 105%;
+    height: 100%;
+    margin-right: 5%;
+    color: $color4;
+    border-color: #333333;
+}

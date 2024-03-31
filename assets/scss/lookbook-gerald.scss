@@ -1,0 +1,214 @@
+//variables necesitadas//
+
+$verdeagua: #00c8c8;
+$negrogrisaceo: #333333;
+$blancogris:  #f8f8f8;
+$montserrat: "Montserrat", sans-serif;
+$roboto: "Roboto", sans-serif;
+//estilos importados//
+@import "../bootstrap/bootstrap-5.2.2/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+//estilos generales//
+
+@mixin boton-view-now {
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+    font-family: $montserrat;
+}
+.nav-color {
+    font-weight: 500;
+    color: #727272;
+    font-family: $montserrat
+}
+.imagen-sombreada {
+    transition: all 400ms ease;
+}
+.imagen-sombreada:hover {
+    box-shadow: 10px 1px 10px  rgba(0,0,0,0.4);
+}
+.imagen-sombreada .iconos{
+    display: none;
+    transition: all ease 300ms;
+
+}
+
+.imagen-sombreada:hover .iconos{
+    display: block;
+    
+}
+
+.corazon {
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+}
+
+.info {
+    position: absolute;
+    left: 30%;
+    bottom: 30%;
+}
+.span-bold {
+    font-weight: 700;
+    color: #575153;
+    font-family: $montserrat;
+}
+h1 {
+    font-family: $montserrat;
+}
+.subtitulo-janes {
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 10px;
+    padding-left: 12px;
+    position: absolute;
+    top: 22%;
+}
+.texto-roboto {
+    font-family: $roboto;
+    font-size: 11px;
+    font-weight: 300;
+    position: absolute;
+    padding-left: 12px;
+    top: 30%;
+    color: #8e8c8c
+}
+.texto-roboto2 {
+    font-family: $roboto;
+    font-size: 11px;
+    font-weight: 300;
+    position: absolute;
+    padding-left: 12px;
+    top: 46%;
+    color: #8e8c8c
+}
+.winanewlook-azul {
+    font-family: $montserrat;
+    font-weight: 700;
+    font-size: 50px;
+    color: $verdeagua;
+    position: absolute;
+    left: 62%;
+    bottom: 25%;
+    line-height: 50px;
+}
+.ref {
+    font-family: $montserrat;
+    font-size: 10px;
+    top: 2%;
+    left: 5%;
+}
+.genero {
+    font-size: 18px;
+    top: 1%;
+    left: 11.5%;
+}
+.span-gordo {
+    font-size: 155px;
+}
+.mens-lookbook {
+    right: 10%;
+    top: 10%;
+}
+.texto-roboto3 {
+    font-family: $roboto;
+    font-size: 12px;
+    font-weight: 300;
+    position: absolute;
+    padding-left: 12px;
+    top: 40%;
+    right: 10%;
+}
+.boton {
+    left: 3.5%;
+    top: 53%;
+    @include boton-view-now;
+}
+.boton2 {
+    top: 55%;
+    right: 10%;
+    @include boton-view-now;
+}
+
+
+
+.bg-color1{
+    background-color: $verdeagua;
+}
+.bg-color3{
+    background-color: $negrogrisaceo;
+}
+.text-color1{
+    color: $info;
+}
+.fs-13{
+    font-size: 13px;
+}
+.fs-15{
+    font-size: 15px;
+}
+.fs-17{
+    font-size: 17px;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+.logo{
+    text-transform: uppercase;
+}
+.link-info{
+    &:hover{
+        color: $info;
+    }
+    &:active{
+        color: $info;
+    }
+}
+.bg-ciudad {
+    z-index: 3;
+}
+.our-lookbook {
+    top: 37%;
+    bottom: 50%;
+    left: 40%;
+}
+.latest-posts-mens-womens {
+    font-family: $montserrat;
+    font-size: 30px;
+    bottom: 30%;
+    left: 36%;
+}
+.footer-box{
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 992px) {
+    .latest-posts-mens-womens {
+        font-family: $montserrat;
+        font-size: 30px;
+        bottom: 30%;
+        left: 0%;
+    }
+}
+
+@media (max-width: 576px) {
+    .latest-posts-mens-womens {
+        font-family: $montserrat;
+        font-size: 30px;
+        bottom: 10%;
+        left: 0%;
+    }
+}

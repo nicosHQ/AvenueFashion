@@ -1,0 +1,114 @@
+@import "../bootstrap-5.2.2/scss/bootstrap.scss";
+$color1: #00c8c8;
+$color2: #333333;
+$color3: #f8f8f8;
+
+.bg-color1{
+    background-color: $color1;
+}
+.bg-color3{
+    background-color: $color3;
+}
+.text-color1{
+    color: $color1;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+.logo{
+    text-transform: uppercase;
+}
+
+.footer-box{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.images{
+    width: 100%;
+}
+
+.margen{
+   padding: 60px 0;
+}
+
+button{
+    color: #727272;
+    background-color: #f8f8f8;
+    border: 3px solid #727272;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-top: 20px;
+}
+
+button:hover{
+    background-color: #00c8c8;
+    border: 3px solid #f8f8f8;
+}
+
+p{
+    color: #727272;
+}
+
+h6{
+    
+   color:#534f50;
+}
+
+.container-fluid{
+    background-color: #f8f8f8;
+    
+}
+
+.col-4{
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.gps, .celular, .link, .email, .horario{ 
+    color: #534f50;
+    margin-right: 10px;
+}
+
+.facebook, .twitter, .instagram, .pinterest{
+    margin: 5px;
+}
+
+.col-8{
+    padding: 0px;
+}
+
+.gps-blue{
+    position: absolute;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 394px;
+    padding-top: 240px;
+}
+
+.map{  
+    width: 885px;
+    height: 467px;
+}
+
+.col-12{
+    background-color: #ffff;
+    padding-right: 10px;
+    padding-bottom: 124px;
+    padding-left: 10px;
+    padding-top: 124px;
+}
+
+
+
